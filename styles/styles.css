@@ -1,5 +1,5 @@
 html{
-  font-family: sans-serif;
+  font-family: arial;
   font-size: 14px;
   background-image: url("../images/bg.jpg");
   background-size: cover;
@@ -28,34 +28,75 @@ li a {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+.active {
+	background-color: #11e3;
+	color: #fff;
+}
+
 li a:hover {
   background-color: #11e3;
 }
 
-.profile{
-  width: 500px;
+.back{
+  width: 1300px;
   height:520px;
   background: rgba(0, 0, 0, 0.7);
   margin: 30px auto;
 }
 .ftprofile{
-  width: 150px;
-  height:225px;
-  border-radius:50%;
-  margin-left: 175px;
+  width: 300px;
+  height:415px;
+  border-radius:10%;
+  margin-left: 17px;
+}
+
+@font-face {
+  font-family: jt;
+  src:url(jt.otf);
+  letter-spacing: 2px;
+}
+
+@font-face {
+  font-family: valo;
+  src:url(Valo.ttf);
+}
+
+@font-face {
+  font-family: milky;
+  src:url(milky.otf);
+}
+
+@font-face {
+  font-family: comic;
+  src:url(comic.otf);
+}
+
+@font-face {
+  font-family: milky-nice;
+  src:url(milky-nice.otf);
+}
+
+@font-face {
+  font-family: pink-ch;
+  src:url(PinkChicken-Regular.ttf);
 }
 
 .text {
   display: block;
   color: white;
   text-align: center;
+  font-family: jt;
 }
 
 .biodata{
   display: block;
   color: white;
   text-align: center;
+  margin-top: 20px;
+  margin-right: 60px;
+  font-weight: lighter;
+  font-family: pink-ch;
+  letter-spacing: 2px;
 }
 
 .tex {
@@ -63,31 +104,57 @@ li a:hover {
   color: white;
 }
 
-.tab{
-  width: 1100px;
-  height:480px;
-  background: rgba(0, 0, 0, 0.7);
-  margin: 30px auto;
-  margin-left:10
-}
-
-.pend{
-  width: 600px;
-  height:480px;
-  background: rgba(0, 0, 0, 0.7);
-  margin: 30px auto;
-  margin-left:10
-}
-
-.akt{
-  width: 600px;
-  height:480px;
-  background: rgba(0, 0, 0, 0.7);
-  margin: 30px auto;
-  margin-left:10
-}
-
 table{
   background-color: whitesmoke;
   margin:10px auto;
+}
+
+footer{
+  padding:0.7%;
+  background-color: #03396c;
+  color: #fff;
+  text-align: center;
+}
+
+.sebelahan {
+    color: white;
+    display: grid;
+    text-align: left;
+    padding: 0em 8em 0 4em;
+    grid-template-columns: 30% auto;
+    justify-content: space-between;
+}
+
+.social{
+	margin-left: 50px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 10% auto;
+}
+.social a{
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  rgb(100, 151, 177);
+	border-radius: 40%;
+	margin: 10px 5px;
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+}
+.social a:hover{
+	transform: scale(2.3);
+	transition: .4s;
+}
+
+.karya{
+  border: 4px solid #575D63;
+  padding: 10px;
+  width: auto;
+  height:250px;
+  border-radius:20%;
+  margin-left: 10px;
+  margin-top: 10px;
 }
